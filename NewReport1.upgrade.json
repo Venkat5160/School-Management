@@ -1,0 +1,501 @@
+{
+  "settings": {
+    "components": {
+      "code": true,
+      "binaries": true
+    },
+    "targetId": "",
+    "targetDisplayName": ".NET 8.0"
+  },
+  "analysisStartTime": "2025-07-26T08:18:25.3350088Z",
+  "analysisEndTime": "2025-07-26T08:18:45.1656369Z",
+  "privacyModeHelpUrl": "https://go.microsoft.com/fwlink/?linkid=2270980",
+  "stats": {
+    "summary": {
+      "projects": 1,
+      "issues": 1,
+      "incidents": 15,
+      "effort": 15
+    },
+    "charts": {
+      "severity": {
+        "Mandatory": 0,
+        "Optional": 15,
+        "Potential": 0,
+        "Information": 0
+      },
+      "category": {
+        "Api": 15
+      }
+    }
+  },
+  "projects": [
+    {
+      "path": "School Management.API\\School Management.API.csproj",
+      "startingProject": true,
+      "issues": 1,
+      "storyPoints": 15,
+      "ruleInstances": [
+        {
+          "incidentId": "8c46d73b-f7ed-4788-ac8a-61317f8127e1",
+          "ruleId": "Api.0003",
+          "description": "Use TimeProvider instead.",
+          "projectPath": "School Management.API\\School Management.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Void Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler::.ctor(Microsoft.Extensions.Options.IOptionsMonitor\u00601\u003CMicrosoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions\u003E,Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder,Microsoft.AspNetCore.Authentication.ISystemClock)\r\n    -\u003E Microsoft.AspNetCore.Authentication.ISystemClock",
+              "protected": "T:Microsoft.AspNetCore.Authentication.ISystemClock"
+            },
+            "kind": "Binary",
+            "path": "%PROGRAMFILES%\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\8.0.11\\ref\\net8.0\\Microsoft.AspNetCore.Authentication.Cookies.dll",
+            "snippet": "System.Void Microsoft.AspNetCore.Authentication.Cookies.CookieAuthenticationHandler::.ctor(Microsoft.Extensions.Options.IOptionsMonitor\u00601\u003CMicrosoft.AspNetCore.Authentication.Cookies.CookieAuthenticationOptions\u003E,Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder,Microsoft.AspNetCore.Authentication.ISystemClock)\r\n    -\u003E Microsoft.AspNetCore.Authentication.ISystemClock",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Authentication.ISystemClock",
+            "label": "T:Microsoft.AspNetCore.Authentication.ISystemClock",
+            "properties": {
+              "AssemblyName": "Microsoft.AspNetCore.Authentication",
+              "AssemblyVersion": "8.0.0.0",
+              "AssemblyPublicKeyToken": "adb9793829ddae60"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.isystemclock",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "97fd6cbe-ecae-49ae-baf4-57cc78cb2756",
+          "ruleId": "Api.0003",
+          "description": "Use TimeProvider instead.",
+          "projectPath": "School Management.API\\School Management.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Authentication.ISystemClock Microsoft.AspNetCore.Identity.SecurityStampValidator\u00601::Clock()\r\n    -\u003E Microsoft.AspNetCore.Authentication.ISystemClock",
+              "protected": "T:Microsoft.AspNetCore.Authentication.ISystemClock"
+            },
+            "kind": "Binary",
+            "path": "%PROGRAMFILES%\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\8.0.11\\ref\\net8.0\\Microsoft.AspNetCore.Identity.dll",
+            "snippet": "Microsoft.AspNetCore.Authentication.ISystemClock Microsoft.AspNetCore.Identity.SecurityStampValidator\u00601::Clock()\r\n    -\u003E Microsoft.AspNetCore.Authentication.ISystemClock",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Authentication.ISystemClock",
+            "label": "T:Microsoft.AspNetCore.Authentication.ISystemClock",
+            "properties": {
+              "AssemblyName": "Microsoft.AspNetCore.Authentication",
+              "AssemblyVersion": "8.0.0.0",
+              "AssemblyPublicKeyToken": "adb9793829ddae60"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.isystemclock",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "40c1b908-b491-4c7a-bd3f-8ff80e80d3c9",
+          "ruleId": "Api.0003",
+          "description": "This type is obsolete and will be removed in a future version. The recommended alternative is Microsoft.Extensions.Hosting.IHostApplicationLifetime.",
+          "projectPath": "School Management.API\\School Management.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Hosting.GenericWebHostApplicationLifetime\r\n    -\u003E Microsoft.AspNetCore.Hosting.IApplicationLifetime",
+              "protected": "T:Microsoft.AspNetCore.Hosting.IApplicationLifetime"
+            },
+            "kind": "Binary",
+            "path": "%PROGRAMFILES%\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\8.0.11\\ref\\net8.0\\Microsoft.AspNetCore.Hosting.dll",
+            "snippet": "Microsoft.AspNetCore.Hosting.GenericWebHostApplicationLifetime\r\n    -\u003E Microsoft.AspNetCore.Hosting.IApplicationLifetime",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Hosting.IApplicationLifetime",
+            "label": "T:Microsoft.AspNetCore.Hosting.IApplicationLifetime",
+            "properties": {
+              "AssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+              "AssemblyVersion": "8.0.0.0",
+              "AssemblyPublicKeyToken": "adb9793829ddae60"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting.iapplicationlifetime",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "b1e856b5-a585-4365-8097-cac8e332b3f5",
+          "ruleId": "Api.0003",
+          "description": "IHostingEnvironment has been deprecated. Use Microsoft.Extensions.Hosting.IHostEnvironment instead.",
+          "projectPath": "School Management.API\\School Management.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Hosting.Internal.HostingEnvironment\r\n    -\u003E Microsoft.Extensions.Hosting.IHostingEnvironment",
+              "protected": "T:Microsoft.Extensions.Hosting.IHostingEnvironment"
+            },
+            "kind": "Binary",
+            "path": "%PROGRAMFILES%\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\8.0.11\\ref\\net8.0\\Microsoft.Extensions.Hosting.dll",
+            "snippet": "Microsoft.Extensions.Hosting.Internal.HostingEnvironment\r\n    -\u003E Microsoft.Extensions.Hosting.IHostingEnvironment",
+            "protectedSnippet": "T:Microsoft.Extensions.Hosting.IHostingEnvironment",
+            "label": "T:Microsoft.Extensions.Hosting.IHostingEnvironment",
+            "properties": {
+              "AssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+              "AssemblyVersion": "8.0.0.0",
+              "AssemblyPublicKeyToken": "adb9793829ddae60"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostingenvironment",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "907651bc-4a0c-4edf-9e0e-e8033022468d",
+          "ruleId": "Api.0003",
+          "description": "IApplicationLifetime has been deprecated. Use Microsoft.Extensions.Hosting.IHostApplicationLifetime instead.",
+          "projectPath": "School Management.API\\School Management.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.Extensions.Hosting.Internal.ApplicationLifetime\r\n    -\u003E Microsoft.Extensions.Hosting.IApplicationLifetime",
+              "protected": "T:Microsoft.Extensions.Hosting.IApplicationLifetime"
+            },
+            "kind": "Binary",
+            "path": "%PROGRAMFILES%\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\8.0.11\\ref\\net8.0\\Microsoft.Extensions.Hosting.dll",
+            "snippet": "Microsoft.Extensions.Hosting.Internal.ApplicationLifetime\r\n    -\u003E Microsoft.Extensions.Hosting.IApplicationLifetime",
+            "protectedSnippet": "T:Microsoft.Extensions.Hosting.IApplicationLifetime",
+            "label": "T:Microsoft.Extensions.Hosting.IApplicationLifetime",
+            "properties": {
+              "AssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+              "AssemblyVersion": "8.0.0.0",
+              "AssemblyPublicKeyToken": "adb9793829ddae60"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.iapplicationlifetime",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "73d75de1-c874-4c15-99eb-3593204c351b",
+          "ruleId": "Api.0003",
+          "description": "Use TimeProvider instead.",
+          "projectPath": "School Management.API\\School Management.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Void Microsoft.AspNetCore.Authentication.OAuth.OAuthHandler\u00601::.ctor(Microsoft.Extensions.Options.IOptionsMonitor\u00601\u003CTOptions\u003E,Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder,Microsoft.AspNetCore.Authentication.ISystemClock)\r\n    -\u003E Microsoft.AspNetCore.Authentication.ISystemClock",
+              "protected": "T:Microsoft.AspNetCore.Authentication.ISystemClock"
+            },
+            "kind": "Binary",
+            "path": "%PROGRAMFILES%\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\8.0.11\\ref\\net8.0\\Microsoft.AspNetCore.Authentication.OAuth.dll",
+            "snippet": "System.Void Microsoft.AspNetCore.Authentication.OAuth.OAuthHandler\u00601::.ctor(Microsoft.Extensions.Options.IOptionsMonitor\u00601\u003CTOptions\u003E,Microsoft.Extensions.Logging.ILoggerFactory,System.Text.Encodings.Web.UrlEncoder,Microsoft.AspNetCore.Authentication.ISystemClock)\r\n    -\u003E Microsoft.AspNetCore.Authentication.ISystemClock",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Authentication.ISystemClock",
+            "label": "T:Microsoft.AspNetCore.Authentication.ISystemClock",
+            "properties": {
+              "AssemblyName": "Microsoft.AspNetCore.Authentication",
+              "AssemblyVersion": "8.0.0.0",
+              "AssemblyPublicKeyToken": "adb9793829ddae60"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.isystemclock",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "c7827d37-3981-4dd9-a2b0-97ceb14d079e",
+          "ruleId": "Api.0003",
+          "description": "Use TimeProvider instead.",
+          "projectPath": "School Management.API\\School Management.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Authentication.TimeProviderClock\r\n    -\u003E Microsoft.AspNetCore.Authentication.ISystemClock",
+              "protected": "T:Microsoft.AspNetCore.Authentication.ISystemClock"
+            },
+            "kind": "Binary",
+            "path": "%PROGRAMFILES%\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\8.0.11\\ref\\net8.0\\Microsoft.AspNetCore.Identity.dll",
+            "snippet": "Microsoft.AspNetCore.Authentication.TimeProviderClock\r\n    -\u003E Microsoft.AspNetCore.Authentication.ISystemClock",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Authentication.ISystemClock",
+            "label": "T:Microsoft.AspNetCore.Authentication.ISystemClock",
+            "properties": {
+              "AssemblyName": "Microsoft.AspNetCore.Authentication",
+              "AssemblyVersion": "8.0.0.0",
+              "AssemblyPublicKeyToken": "adb9793829ddae60"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.isystemclock",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "e71cd965-d9bf-4f69-b17e-4ec86cd5e6ae",
+          "ruleId": "Api.0003",
+          "description": "This type is obsolete and will be removed in a future version. The recommended alternative is Microsoft.AspNetCore.Hosting.IWebHostEnvironment.",
+          "projectPath": "School Management.API\\School Management.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Void Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions::Initialize(Microsoft.AspNetCore.Hosting.IHostingEnvironment,System.String,Microsoft.AspNetCore.Hosting.WebHostOptions)\r\n    -\u003E Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+              "protected": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment"
+            },
+            "kind": "Binary",
+            "path": "%PROGRAMFILES%\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\8.0.11\\ref\\net8.0\\Microsoft.AspNetCore.Hosting.dll",
+            "snippet": "System.Void Microsoft.AspNetCore.Hosting.HostingEnvironmentExtensions::Initialize(Microsoft.AspNetCore.Hosting.IHostingEnvironment,System.String,Microsoft.AspNetCore.Hosting.WebHostOptions)\r\n    -\u003E Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+            "label": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+            "properties": {
+              "AssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+              "AssemblyVersion": "8.0.0.0",
+              "AssemblyPublicKeyToken": "adb9793829ddae60"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting.ihostingenvironment",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "dd257dfe-7ef6-4b85-86c2-c484ebaa138e",
+          "ruleId": "Api.0003",
+          "description": "IHostingEnvironment has been deprecated. Use Microsoft.Extensions.Hosting.IHostEnvironment instead.",
+          "projectPath": "School Management.API\\School Management.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Hosting.HostingEnvironment\r\n    -\u003E Microsoft.Extensions.Hosting.IHostingEnvironment",
+              "protected": "T:Microsoft.Extensions.Hosting.IHostingEnvironment"
+            },
+            "kind": "Binary",
+            "path": "%PROGRAMFILES%\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\8.0.11\\ref\\net8.0\\Microsoft.AspNetCore.Hosting.dll",
+            "snippet": "Microsoft.AspNetCore.Hosting.HostingEnvironment\r\n    -\u003E Microsoft.Extensions.Hosting.IHostingEnvironment",
+            "protectedSnippet": "T:Microsoft.Extensions.Hosting.IHostingEnvironment",
+            "label": "T:Microsoft.Extensions.Hosting.IHostingEnvironment",
+            "properties": {
+              "AssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+              "AssemblyVersion": "8.0.0.0",
+              "AssemblyPublicKeyToken": "adb9793829ddae60"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.ihostingenvironment",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "36e6ac2f-834e-4abe-be34-59996f9107e3",
+          "ruleId": "Api.0003",
+          "description": "This type is obsolete and will be removed in a future version. The recommended alternative is Microsoft.AspNetCore.Hosting.IWebHostEnvironment.",
+          "projectPath": "School Management.API\\School Management.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Hosting.HostingEnvironment\r\n    -\u003E Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+              "protected": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment"
+            },
+            "kind": "Binary",
+            "path": "%PROGRAMFILES%\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\8.0.11\\ref\\net8.0\\Microsoft.AspNetCore.Hosting.dll",
+            "snippet": "Microsoft.AspNetCore.Hosting.HostingEnvironment\r\n    -\u003E Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+            "label": "T:Microsoft.AspNetCore.Hosting.IHostingEnvironment",
+            "properties": {
+              "AssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+              "AssemblyVersion": "8.0.0.0",
+              "AssemblyPublicKeyToken": "adb9793829ddae60"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting.ihostingenvironment",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "35d6ce02-b43e-4d76-b68c-f4fcba1c2810",
+          "ruleId": "Api.0003",
+          "description": "IApplicationLifetime has been deprecated. Use Microsoft.Extensions.Hosting.IHostApplicationLifetime instead.",
+          "projectPath": "School Management.API\\School Management.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Hosting.ApplicationLifetime\r\n    -\u003E Microsoft.Extensions.Hosting.IApplicationLifetime",
+              "protected": "T:Microsoft.Extensions.Hosting.IApplicationLifetime"
+            },
+            "kind": "Binary",
+            "path": "%PROGRAMFILES%\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\8.0.11\\ref\\net8.0\\Microsoft.AspNetCore.Hosting.dll",
+            "snippet": "Microsoft.AspNetCore.Hosting.ApplicationLifetime\r\n    -\u003E Microsoft.Extensions.Hosting.IApplicationLifetime",
+            "protectedSnippet": "T:Microsoft.Extensions.Hosting.IApplicationLifetime",
+            "label": "T:Microsoft.Extensions.Hosting.IApplicationLifetime",
+            "properties": {
+              "AssemblyName": "Microsoft.Extensions.Hosting.Abstractions",
+              "AssemblyVersion": "8.0.0.0",
+              "AssemblyPublicKeyToken": "adb9793829ddae60"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.extensions.hosting.iapplicationlifetime",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "c58e475d-44a5-41f7-9983-46b52cbe404f",
+          "ruleId": "Api.0003",
+          "description": "This type is obsolete and will be removed in a future version. The recommended alternative is Microsoft.Extensions.Hosting.IHostApplicationLifetime.",
+          "projectPath": "School Management.API\\School Management.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Hosting.ApplicationLifetime\r\n    -\u003E Microsoft.AspNetCore.Hosting.IApplicationLifetime",
+              "protected": "T:Microsoft.AspNetCore.Hosting.IApplicationLifetime"
+            },
+            "kind": "Binary",
+            "path": "%PROGRAMFILES%\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\8.0.11\\ref\\net8.0\\Microsoft.AspNetCore.Hosting.dll",
+            "snippet": "Microsoft.AspNetCore.Hosting.ApplicationLifetime\r\n    -\u003E Microsoft.AspNetCore.Hosting.IApplicationLifetime",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Hosting.IApplicationLifetime",
+            "label": "T:Microsoft.AspNetCore.Hosting.IApplicationLifetime",
+            "properties": {
+              "AssemblyName": "Microsoft.AspNetCore.Hosting.Abstractions",
+              "AssemblyVersion": "8.0.0.0",
+              "AssemblyPublicKeyToken": "adb9793829ddae60"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.hosting.iapplicationlifetime",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "57b854d1-68c3-439a-b3b5-f01797629a7c",
+          "ruleId": "Api.0003",
+          "description": "Use TimeProvider instead.",
+          "projectPath": "School Management.API\\School Management.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Void Microsoft.AspNetCore.Identity.SecurityStampValidator\u00601::.ctor(Microsoft.Extensions.Options.IOptions\u00601\u003CMicrosoft.AspNetCore.Identity.SecurityStampValidatorOptions\u003E,Microsoft.AspNetCore.Identity.SignInManager\u00601\u003CTUser\u003E,Microsoft.AspNetCore.Authentication.ISystemClock,Microsoft.Extensions.Logging.ILoggerFactory)\r\n    -\u003E Microsoft.AspNetCore.Authentication.ISystemClock",
+              "protected": "T:Microsoft.AspNetCore.Authentication.ISystemClock"
+            },
+            "kind": "Binary",
+            "path": "%PROGRAMFILES%\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\8.0.11\\ref\\net8.0\\Microsoft.AspNetCore.Identity.dll",
+            "snippet": "System.Void Microsoft.AspNetCore.Identity.SecurityStampValidator\u00601::.ctor(Microsoft.Extensions.Options.IOptions\u00601\u003CMicrosoft.AspNetCore.Identity.SecurityStampValidatorOptions\u003E,Microsoft.AspNetCore.Identity.SignInManager\u00601\u003CTUser\u003E,Microsoft.AspNetCore.Authentication.ISystemClock,Microsoft.Extensions.Logging.ILoggerFactory)\r\n    -\u003E Microsoft.AspNetCore.Authentication.ISystemClock",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Authentication.ISystemClock",
+            "label": "T:Microsoft.AspNetCore.Authentication.ISystemClock",
+            "properties": {
+              "AssemblyName": "Microsoft.AspNetCore.Authentication",
+              "AssemblyVersion": "8.0.0.0",
+              "AssemblyPublicKeyToken": "adb9793829ddae60"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.isystemclock",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "2c047978-b493-4f5e-a7c1-f5ce80b20eb8",
+          "ruleId": "Api.0003",
+          "description": "Use TimeProvider instead.",
+          "projectPath": "School Management.API\\School Management.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "System.Void Microsoft.AspNetCore.Identity.TwoFactorSecurityStampValidator\u00601::.ctor(Microsoft.Extensions.Options.IOptions\u00601\u003CMicrosoft.AspNetCore.Identity.SecurityStampValidatorOptions\u003E,Microsoft.AspNetCore.Identity.SignInManager\u00601\u003CTUser\u003E,Microsoft.AspNetCore.Authentication.ISystemClock,Microsoft.Extensions.Logging.ILoggerFactory)\r\n    -\u003E Microsoft.AspNetCore.Authentication.ISystemClock",
+              "protected": "T:Microsoft.AspNetCore.Authentication.ISystemClock"
+            },
+            "kind": "Binary",
+            "path": "%PROGRAMFILES%\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\8.0.11\\ref\\net8.0\\Microsoft.AspNetCore.Identity.dll",
+            "snippet": "System.Void Microsoft.AspNetCore.Identity.TwoFactorSecurityStampValidator\u00601::.ctor(Microsoft.Extensions.Options.IOptions\u00601\u003CMicrosoft.AspNetCore.Identity.SecurityStampValidatorOptions\u003E,Microsoft.AspNetCore.Identity.SignInManager\u00601\u003CTUser\u003E,Microsoft.AspNetCore.Authentication.ISystemClock,Microsoft.Extensions.Logging.ILoggerFactory)\r\n    -\u003E Microsoft.AspNetCore.Authentication.ISystemClock",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Authentication.ISystemClock",
+            "label": "T:Microsoft.AspNetCore.Authentication.ISystemClock",
+            "properties": {
+              "AssemblyName": "Microsoft.AspNetCore.Authentication",
+              "AssemblyVersion": "8.0.0.0",
+              "AssemblyPublicKeyToken": "adb9793829ddae60"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.authentication.isystemclock",
+                "isCustom": true
+              }
+            ]
+          }
+        },
+        {
+          "incidentId": "6a7eecbd-9daa-498a-aefa-d528c54af9c4",
+          "ruleId": "Api.0003",
+          "description": "This attribute has been superseded by RazorCompiledItem and will not be used by the runtime.",
+          "projectPath": "School Management.API\\School Management.API.csproj",
+          "state": "Active",
+          "location": {
+            "snippetModel": {
+              "unrestricted": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAttribute\r\n    -\u003E Microsoft.AspNetCore.Mvc.Razor.Compilation.RazorViewAttribute",
+              "protected": "T:Microsoft.AspNetCore.Mvc.Razor.Compilation.RazorViewAttribute"
+            },
+            "kind": "Binary",
+            "path": "%PROGRAMFILES%\\dotnet\\packs\\Microsoft.AspNetCore.App.Ref\\8.0.11\\ref\\net8.0\\Microsoft.AspNetCore.Mvc.RazorPages.dll",
+            "snippet": "Microsoft.AspNetCore.Mvc.RazorPages.Infrastructure.RazorPageAttribute\r\n    -\u003E Microsoft.AspNetCore.Mvc.Razor.Compilation.RazorViewAttribute",
+            "protectedSnippet": "T:Microsoft.AspNetCore.Mvc.Razor.Compilation.RazorViewAttribute",
+            "label": "T:Microsoft.AspNetCore.Mvc.Razor.Compilation.RazorViewAttribute",
+            "properties": {
+              "AssemblyName": "Microsoft.AspNetCore.Mvc.Razor",
+              "AssemblyVersion": "8.0.0.0",
+              "AssemblyPublicKeyToken": "adb9793829ddae60"
+            },
+            "links": [
+              {
+                "title": "API documentation",
+                "url": "https://learn.microsoft.com/dotnet/api/microsoft.aspnetcore.mvc.razor.compilation.razorviewattribute",
+                "isCustom": true
+              }
+            ]
+          }
+        }
+      ]
+    }
+  ],
+  "rules": {
+    "Api.0003": {
+      "id": "Api.0003",
+      "description": "API is obsolete.",
+      "label": "API is obsolete",
+      "severity": "Optional",
+      "effort": 1
+    }
+  }
+}
