@@ -1,8 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Threading.Tasks;
-using Microsoft.AspNetCore.Http;
+﻿
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
 using SchoolManagement.DAL.DataContext;
@@ -78,9 +74,25 @@ namespace School_Management.API.Controllers
         [HttpPost]
         public async Task<ActionResult<Student>> PostStudent(Student student)
         {
-            _context.Students.Add(student);
-            await _context.SaveChangesAsync();
-
+            var isLinq = false;
+            if (isLinq)
+            {
+                _context.Students.Add(student);
+                await _context.SaveChangesAsync();
+            }
+            else
+            {
+                // Optional: LINQ-style check to avoid duplicate entry
+                var existing = _context.Students
+                    .FirstOrDefault(s => s.Name == student.Name && s.DateOfBirth == student.DateOfBirth && s.Address == student.Address);
+                if (existing != null)
+                {
+                    return Conflict("Student already exists.");
+                }
+                // Add student
+                _context.Students.Add(student);
+                await _context.SaveChangesAsync();
+            }
             return CreatedAtAction("GetStudent", new { id = student.Id }, student);
         }
 
