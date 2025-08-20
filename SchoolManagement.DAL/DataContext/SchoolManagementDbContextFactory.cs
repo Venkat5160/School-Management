@@ -13,7 +13,7 @@ namespace SchoolManagement.DAL.DataContext
         public SchoolManagementDbContext CreateDbContext(string[] args)
         {
             var optionsBuilder = new DbContextOptionsBuilder<SchoolManagementDbContext>();
-            optionsBuilder.UseSqlServer("Data Source=WINDOWS-JQ14JQB;Initial Catalog=SchoolManagementDb;Integrated Security=True;Encrypt=False");
+            optionsBuilder.UseSqlServer("Data Source=(localdb)\\MSSQLLocalDB;Initial Catalog=SchoolManagementDb;Integrated Security=True;Encrypt=False");
 
             return new SchoolManagementDbContext(optionsBuilder.Options);
         }
