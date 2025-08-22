@@ -7,6 +7,8 @@
   </PropertyGroup>
   <ItemGroup>
 	  <PackageReference Include="MassTransit.EntityFrameworkCore" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning" />
+	  <PackageReference Include="Microsoft.AspNetCore.Mvc.Versioning.ApiExplorer" />
 	  <PackageReference Include="Microsoft.AspNetCore.OpenApi" />
 	  <PackageReference Include="Microsoft.EntityFrameworkCore.Design">
 		  <PrivateAssets>all</PrivateAssets>
@@ -21,6 +23,7 @@
     <PackageReference Include="Swashbuckle.AspNetCore" />
   </ItemGroup>
   <ItemGroup>
+    <ProjectReference Include="..\SchoolManagement.BAL\SchoolManagement.BAL.csproj" />
     <ProjectReference Include="..\SchoolManagement.DAL\SchoolManagement.DAL.csproj" />
   </ItemGroup>
 </Project>
