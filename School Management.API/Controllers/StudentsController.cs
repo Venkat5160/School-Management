@@ -1,7 +1,5 @@
-﻿
-using Microsoft.AspNetCore.Mvc;
+﻿using Microsoft.AspNetCore.Mvc;
 using Microsoft.EntityFrameworkCore;
-using NuGet.Protocol.Core.Types;
 using SchoolManagement.DAL.DataContext;
 using SchoolManagement.DAL.Entities;
 
@@ -143,9 +141,6 @@ namespace School_Management.API.Controllers
                 return NotFound("No student match the provided search criteria.");
             return Ok(result);
         }
-
-
-
 
         private bool StudentExists(int id)
         {
